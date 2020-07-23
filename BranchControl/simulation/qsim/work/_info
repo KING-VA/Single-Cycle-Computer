@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab13/BranchControl/simulation/qsim
+vBranchControl
+!s110 1588139308
+!i10b 1
+!s100 N21dfTek[R<LMLXR8oV?K1
+IUn8Qb6FOI`bAfL]d>YeUa0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1588139307
+8BranchControl.vo
+FBranchControl.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1588139308.000000
+!s107 BranchControl.vo|
+!s90 -work|work|BranchControl.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@branch@control
+vBranchControl_vlg_vec_tst
+!s110 1588139309
+!i10b 1
+!s100 eFbYVjkWDT4kAk<FY?X;j2
+IXHQaX5Wo:cO6>j:3k]jAi3
+R1
+R0
+w1588139304
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1588139309.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4
+n@branch@control_vlg_vec_tst

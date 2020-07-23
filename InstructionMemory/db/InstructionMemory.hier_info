@@ -1,0 +1,27 @@
+|InstructionMemory
+Address[0] => Decoder0.IN7
+Address[1] => Decoder0.IN6
+Address[2] => Decoder0.IN5
+Address[3] => Decoder0.IN4
+Address[4] => Decoder0.IN3
+Address[5] => Decoder0.IN2
+Address[6] => Decoder0.IN1
+Address[7] => Decoder0.IN0
+IR[0] << WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+IR[1] << WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+IR[2] << WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+IR[3] << WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+IR[4] << WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+IR[5] << WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+IR[6] << WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+IR[7] << WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+IR[8] << <GND>
+IR[9] << <GND>
+IR[10] << IR.DB_MAX_OUTPUT_PORT_TYPE
+IR[11] << WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+IR[12] << IR.DB_MAX_OUTPUT_PORT_TYPE
+IR[13] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+IR[14] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+IR[15] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

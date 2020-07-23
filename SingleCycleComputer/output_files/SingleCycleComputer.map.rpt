@@ -1,0 +1,506 @@
+Analysis & Synthesis report for SingleCycleComputer
+Wed May 06 22:46:14 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: InstructionMemory:inst324
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed May 06 22:46:14 2020       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; SingleCycleComputer                         ;
+; Top-level Entity Name           ; SingleCycleComputer                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 40                                          ;
+; Total pins                      ; 117                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                               ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+; Option                                                                          ; Setting             ; Default Value       ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8      ;                     ;
+; Top-level entity name                                                           ; SingleCycleComputer ; SingleCycleComputer ;
+; Family name                                                                     ; Cyclone V           ; Cyclone V           ;
+; Use smart compilation                                                           ; Off                 ; Off                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                  ; On                  ;
+; Enable compact report table                                                     ; Off                 ; Off                 ;
+; Restructure Multiplexers                                                        ; Auto                ; Auto                ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                 ;
+; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                 ;
+; Preserve fewer node names                                                       ; On                  ; On                  ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable              ; Enable              ;
+; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993           ;
+; State Machine Processing                                                        ; Auto                ; Auto                ;
+; Safe State Machine                                                              ; Off                 ; Off                 ;
+; Extract Verilog State Machines                                                  ; On                  ; On                  ;
+; Extract VHDL State Machines                                                     ; On                  ; On                  ;
+; Ignore Verilog initial constructs                                               ; Off                 ; Off                 ;
+; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000                ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                  ;
+; Infer RAMs from Raw Logic                                                       ; On                  ; On                  ;
+; Parallel Synthesis                                                              ; On                  ; On                  ;
+; DSP Block Balancing                                                             ; Auto                ; Auto                ;
+; NOT Gate Push-Back                                                              ; On                  ; On                  ;
+; Power-Up Don't Care                                                             ; On                  ; On                  ;
+; Remove Redundant Logic Cells                                                    ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                                      ; On                  ; On                  ;
+; Ignore CARRY Buffers                                                            ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                                          ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                                            ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                                             ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                 ;
+; Optimization Technique                                                          ; Balanced            ; Balanced            ;
+; Carry Chain Length                                                              ; 70                  ; 70                  ;
+; Auto Carry Chains                                                               ; On                  ; On                  ;
+; Auto Open-Drain Pins                                                            ; On                  ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                 ;
+; Auto ROM Replacement                                                            ; On                  ; On                  ;
+; Auto RAM Replacement                                                            ; On                  ; On                  ;
+; Auto DSP Block Replacement                                                      ; On                  ; On                  ;
+; Auto Shift Register Replacement                                                 ; Auto                ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto                ;
+; Auto Clock Enable Replacement                                                   ; On                  ; On                  ;
+; Strict RAM Replacement                                                          ; Off                 ; Off                 ;
+; Allow Synchronous Control Signals                                               ; On                  ; On                  ;
+; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                 ;
+; Auto Resource Sharing                                                           ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                 ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                  ;
+; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                 ;
+; Timing-Driven Synthesis                                                         ; On                  ; On                  ;
+; Report Parameter Settings                                                       ; On                  ; On                  ;
+; Report Source Assignments                                                       ; On                  ; On                  ;
+; Report Connectivity Checks                                                      ; On                  ; On                  ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                 ;
+; Synchronization Register Chain Length                                           ; 3                   ; 3                   ;
+; Power Optimization During Synthesis                                             ; Normal compilation  ; Normal compilation  ;
+; HDL message level                                                               ; Level2              ; Level2              ;
+; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                 ;
+; Clock MUX Protection                                                            ; On                  ; On                  ;
+; Auto Gated Clock Conversion                                                     ; Off                 ; Off                 ;
+; Block Design Naming                                                             ; Auto                ; Auto                ;
+; SDC constraint protection                                                       ; Off                 ; Off                 ;
+; Synthesis Effort                                                                ; Auto                ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                  ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                 ;
+; Analysis & Synthesis Message Level                                              ; Medium              ; Medium              ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto                ;
+; Resource Aware Inference For Block RAM                                          ; On                  ; On                  ;
+; Automatic Parallel Synthesis                                                    ; On                  ; On                  ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                 ; Off                 ;
++---------------------------------------------------------------------------------+---------------------+---------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++------------------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                            ; Library ;
++------------------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+; SingleCycleComputer.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/SingleCycleComputer/SingleCycleComputer.bdf ;         ;
+; ../InstructionMemory/InstructionMemory.v ; yes             ; User Verilog HDL File                    ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/InstructionMemory/InstructionMemory.v       ;         ;
+; instructiondecoder.v                     ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/instructiondecoder/instructiondecoder.v     ;         ;
+; programcounter8bit.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/programcounter8bit/programcounter8bit.bdf   ;         ;
+; mux4to1.bdf                              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1/mux4to1.bdf                         ;         ;
+; extend.v                                 ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/extend/extend.v                             ;         ;
+; registerfile.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/registerfile/registerfile.bdf               ;         ;
+; mux4to1_8bit.v                           ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v                 ;         ;
+; genreg8bit.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/genreg8bit/genreg8bit.bdf                   ;         ;
+; decoder2to4.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/decoder2to4/decoder2to4.bdf                 ;         ;
+; mux2to1_8bit.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux2to1_8bit/mux2to1_8bit.bdf               ;         ;
+; mux2to1.bdf                              ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux2to1/mux2to1.bdf                         ;         ;
+; functionunit.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/functionunit/functionunit.bdf               ;         ;
+; alustage.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/alustage/alustage.bdf                       ;         ;
+; arithstage.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/arithstage/arithstage.bdf                   ;         ;
+; fulladder.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/fulladder/fulladder.bdf                     ;         ;
+; logicstage.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/logicstage/logicstage.bdf                   ;         ;
+; zerodetect.v                             ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/zerodetect/zerodetect.v                     ;         ;
+; shifter8bit.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/shifter8bit/shifter8bit.bdf                 ;         ;
+; zerofill.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/zerofill/zerofill.bdf                       ;         ;
+; branchcontrol.v                          ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/branchcontrol/branchcontrol.v               ;         ;
+; sevenseg.v                               ; yes             ; Auto-Found Verilog HDL File              ; C:/Users/2808V/Documents/ENGR303/Labs/Lab14/sevenseg/sevenseg.v                         ;         ;
++------------------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 107         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 168         ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 42          ;
+;     -- 5 input functions                    ; 30          ;
+;     -- 4 input functions                    ; 74          ;
+;     -- <=3 input functions                  ; 21          ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 40          ;
+;                                             ;             ;
+; I/O pins                                    ; 117         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 40          ;
+; Total fan-out                               ; 1130        ;
+; Average fan-out                             ; 2.56        ;
++---------------------------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                      ; Entity Name         ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
+; |SingleCycleComputer           ; 168 (0)             ; 40 (0)                    ; 0                 ; 0          ; 117  ; 0            ; |SingleCycleComputer                                                                     ; SingleCycleComputer ; work         ;
+;    |BranchControl:inst6|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|BranchControl:inst6                                                 ; BranchControl       ; work         ;
+;    |FunctionUnit:inst24|       ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24                                                 ; FunctionUnit        ; work         ;
+;       |ALUStage:inst2|         ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2                                  ; ALUStage            ; work         ;
+;          |ArithStage:inst|     ; 13 (5)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst                  ; ArithStage          ; work         ;
+;             |FullAdder:inst12| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst12 ; FullAdder           ; work         ;
+;             |FullAdder:inst16| ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst16 ; FullAdder           ; work         ;
+;             |FullAdder:inst24| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst24 ; FullAdder           ; work         ;
+;             |FullAdder:inst32| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst32 ; FullAdder           ; work         ;
+;             |FullAdder:inst4|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst4  ; FullAdder           ; work         ;
+;          |Mux2to1_8bit:inst3|  ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3               ; Mux2to1_8bit        ; work         ;
+;             |Mux2to1:inst1|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst1 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst2|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst2 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst3|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst3 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst5|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst5 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst6|    ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst6 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst7|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst7 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst8|    ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst8 ; Mux2to1             ; work         ;
+;             |Mux2to1:inst|     ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst  ; Mux2to1             ; work         ;
+;    |InstructionDecoder:inst5|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|InstructionDecoder:inst5                                            ; InstructionDecoder  ; work         ;
+;    |InstructionMemory:inst324| ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|InstructionMemory:inst324                                           ; InstructionMemory   ; work         ;
+;    |Mux2to1_8bit:inst23|       ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23                                                 ; Mux2to1_8bit        ; work         ;
+;       |Mux2to1:inst1|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst1                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst2|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst2                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst3|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst3                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst5|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst5                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst6|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst6                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst7|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst7                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst8|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst8                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst23|Mux2to1:inst                                    ; Mux2to1             ; work         ;
+;    |Mux2to1_8bit:inst25|       ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25                                                 ; Mux2to1_8bit        ; work         ;
+;       |Mux2to1:inst1|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst1                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst2|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst2                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst3|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst3                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst5|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst5                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst6|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst6                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst7|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst7                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst8|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst8                                   ; Mux2to1             ; work         ;
+;       |Mux2to1:inst|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst                                    ; Mux2to1             ; work         ;
+;    |ProgramCounter8Bit:inst2|  ; 18 (2)              ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2                                            ; ProgramCounter8Bit  ; work         ;
+;       |Mux4to1:inst11|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst11                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst16|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst16                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst21|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst21                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst26|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst26                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst31|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst31                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst36|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst36                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst41|         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst41                             ; Mux4to1             ; work         ;
+;       |Mux4to1:inst7|          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|ProgramCounter8Bit:inst2|Mux4to1:inst7                              ; Mux4to1             ; work         ;
+;    |RegisterFile:inst22|       ; 12 (1)              ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22                                                 ; RegisterFile        ; work         ;
+;       |Decoder2to4:inst6|      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Decoder2to4:inst6                               ; Decoder2to4         ; work         ;
+;       |GenReg8Bit:inst2|       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|GenReg8Bit:inst2                                ; GenReg8Bit          ; work         ;
+;       |GenReg8Bit:inst3|       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|GenReg8Bit:inst3                                ; GenReg8Bit          ; work         ;
+;       |GenReg8Bit:inst4|       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|GenReg8Bit:inst4                                ; GenReg8Bit          ; work         ;
+;       |GenReg8Bit:inst5|       ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|GenReg8Bit:inst5                                ; GenReg8Bit          ; work         ;
+;       |Mux4to1_8Bit:inst1|     ; 8 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1                              ; Mux4to1_8Bit        ; work         ;
+;          |Mux4to1:comb_10|     ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_10              ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_3|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_3               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_4|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_4               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_5|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_5               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_6|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_6               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_7|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_7               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_8|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_8               ; Mux4to1             ; work         ;
+;          |Mux4to1:comb_9|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|RegisterFile:inst22|Mux4to1_8Bit:inst1|Mux4to1:comb_9               ; Mux4to1             ; work         ;
+;    |SevenSeg:inst1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst1                                                      ; SevenSeg            ; work         ;
+;    |SevenSeg:inst26|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst26                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst27|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst27                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst28|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst28                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst29|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst29                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst30|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst30                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst31|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst31                                                     ; SevenSeg            ; work         ;
+;    |SevenSeg:inst|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SingleCycleComputer|SevenSeg:inst                                                       ; SevenSeg            ; work         ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 40    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 40    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SingleCycleComputer|FunctionUnit:inst24|ALUStage:inst2|Mux2to1_8bit:inst3|Mux2to1:inst|inst3 ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |SingleCycleComputer|Mux2to1_8bit:inst25|Mux2to1:inst|inst3                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: InstructionMemory:inst324 ;
++----------------+---------+---------------------------------------------+
+; Parameter Name ; Value   ; Type                                        ;
++----------------+---------+---------------------------------------------+
+; MOVA           ; 0000000 ; Unsigned Binary                             ;
+; INC            ; 0000001 ; Unsigned Binary                             ;
+; ADD            ; 0000010 ; Unsigned Binary                             ;
+; SUB            ; 0000101 ; Unsigned Binary                             ;
+; DEC            ; 0000110 ; Unsigned Binary                             ;
+; And            ; 0001000 ; Unsigned Binary                             ;
+; Or             ; 0001001 ; Unsigned Binary                             ;
+; Xor            ; 0001010 ; Unsigned Binary                             ;
+; Not            ; 0001011 ; Unsigned Binary                             ;
+; MOVB           ; 0001100 ; Unsigned Binary                             ;
+; SFTR           ; 0001101 ; Unsigned Binary                             ;
+; SFTL           ; 0001110 ; Unsigned Binary                             ;
+; LOAD           ; 0010000 ; Unsigned Binary                             ;
+; ST             ; 0100000 ; Unsigned Binary                             ;
+; LDI            ; 1001100 ; Unsigned Binary                             ;
+; ADI            ; 1000010 ; Unsigned Binary                             ;
+; BRZ            ; 1100000 ; Unsigned Binary                             ;
+; BRN            ; 1100001 ; Unsigned Binary                             ;
+; JMP            ; 1110000 ; Unsigned Binary                             ;
+; R0             ; 000     ; Unsigned Binary                             ;
+; R1             ; 001     ; Unsigned Binary                             ;
+; R2             ; 010     ; Unsigned Binary                             ;
+; R3             ; 011     ; Unsigned Binary                             ;
+; ZERO           ; 000     ; Unsigned Binary                             ;
+; ONE            ; 001     ; Unsigned Binary                             ;
+; TWO            ; 010     ; Unsigned Binary                             ;
+; THREE          ; 011     ; Unsigned Binary                             ;
+; FOUR           ; 100     ; Unsigned Binary                             ;
+; NULL           ; 000     ; Unsigned Binary                             ;
++----------------+---------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 40                          ;
+;     CLR               ; 8                           ;
+;     ENA CLR           ; 32                          ;
+; arriav_lcell_comb     ; 182                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 181                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 74                          ;
+;         5 data inputs ; 30                          ;
+;         6 data inputs ; 42                          ;
+; boundary_port         ; 117                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 6.50                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Wed May 06 22:45:49 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SingleCycleComputer -c SingleCycleComputer
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file singlecyclecomputer.bdf
+    Info (12023): Found entity 1: SingleCycleComputer
+Info (12021): Found 1 design units, including 1 entities, in source file /users/2808v/documents/engr303/labs/lab14/instructionmemory/instructionmemory.v
+    Info (12023): Found entity 1: InstructionMemory File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/InstructionMemory/InstructionMemory.v Line: 1
+Info (12127): Elaborating entity "SingleCycleComputer" for the top level hierarchy
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/instructiondecoder/instructiondecoder.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: InstructionDecoder File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/instructiondecoder/instructiondecoder.v Line: 1
+Info (12128): Elaborating entity "InstructionDecoder" for hierarchy "InstructionDecoder:inst5"
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "InstructionMemory:inst324"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/programcounter8bit/programcounter8bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ProgramCounter8Bit
+Info (12128): Elaborating entity "ProgramCounter8Bit" for hierarchy "ProgramCounter8Bit:inst2"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/mux4to1/mux4to1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux4to1
+Info (12128): Elaborating entity "Mux4to1" for hierarchy "ProgramCounter8Bit:inst2|Mux4to1:inst7"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/extend/extend.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Extend File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/extend/extend.v Line: 1
+Info (12128): Elaborating entity "Extend" for hierarchy "Extend:inst7"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/registerfile/registerfile.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: RegisterFile
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:inst22"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/mux4to1_8bit/mux4to1_8bit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux4to1_8Bit File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 1
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(7): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(8): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(9): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(10): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(11): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(12): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(13): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at mux4to1_8bit.v(14): instance has no name File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/mux4to1_8bit/mux4to1_8bit.v Line: 14
+Info (12128): Elaborating entity "Mux4to1_8Bit" for hierarchy "RegisterFile:inst22|Mux4to1_8Bit:inst1"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/genreg8bit/genreg8bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: GenReg8Bit
+Info (12128): Elaborating entity "GenReg8Bit" for hierarchy "RegisterFile:inst22|GenReg8Bit:inst2"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/decoder2to4/decoder2to4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Decoder2to4
+Info (12128): Elaborating entity "Decoder2to4" for hierarchy "RegisterFile:inst22|Decoder2to4:inst6"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/mux2to1_8bit/mux2to1_8bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux2to1_8bit
+Info (12128): Elaborating entity "Mux2to1_8bit" for hierarchy "Mux2to1_8bit:inst25"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/mux2to1/mux2to1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Mux2to1
+Info (12128): Elaborating entity "Mux2to1" for hierarchy "Mux2to1_8bit:inst25|Mux2to1:inst"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/functionunit/functionunit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FunctionUnit
+Info (12128): Elaborating entity "FunctionUnit" for hierarchy "FunctionUnit:inst24"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/alustage/alustage.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ALUStage
+Info (12128): Elaborating entity "ALUStage" for hierarchy "FunctionUnit:inst24|ALUStage:inst2"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/arithstage/arithstage.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ArithStage
+Info (12128): Elaborating entity "ArithStage" for hierarchy "FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/fulladder/fulladder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FullAdder
+Info (12128): Elaborating entity "FullAdder" for hierarchy "FunctionUnit:inst24|ALUStage:inst2|ArithStage:inst|FullAdder:inst28"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/logicstage/logicstage.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: LogicStage
+Info (12128): Elaborating entity "LogicStage" for hierarchy "FunctionUnit:inst24|ALUStage:inst2|LogicStage:inst2"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/zerodetect/zerodetect.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ZeroDetect File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/zerodetect/zerodetect.v Line: 1
+Info (12128): Elaborating entity "ZeroDetect" for hierarchy "FunctionUnit:inst24|ZeroDetect:inst"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/shifter8bit/shifter8bit.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Shifter8bit
+Info (12128): Elaborating entity "Shifter8bit" for hierarchy "FunctionUnit:inst24|Shifter8bit:inst4"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/zerofill/zerofill.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ZeroFill
+Info (12128): Elaborating entity "ZeroFill" for hierarchy "ZeroFill:inst10"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/branchcontrol/branchcontrol.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: BranchControl File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/branchcontrol/branchcontrol.v Line: 1
+Info (12128): Elaborating entity "BranchControl" for hierarchy "BranchControl:inst6"
+Warning (12125): Using design file /users/2808v/documents/engr303/labs/lab14/sevenseg/sevenseg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: SevenSeg File: C:/Users/2808V/Documents/ENGR303/Labs/Lab14/sevenseg/sevenseg.v Line: 1
+Info (12128): Elaborating entity "SevenSeg" for hierarchy "SevenSeg:inst27"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "IR[9]" is stuck at GND
+    Warning (13410): Pin "IR[8]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 317 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 107 output pins
+    Info (21061): Implemented 200 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Wed May 06 22:46:14 2020
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:49
+
+

@@ -1,0 +1,469 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MW",
+					"strict" : false
+				},
+				{
+					"name" : "IR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAhighnibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusAlownibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBhighnibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusBlownibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDhighnibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BusDlownibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "K[1]",
+					"strict" : false
+				},
+				{
+					"name" : "K[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCouthighnibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PCoutlownibble[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DataIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "ResetN",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

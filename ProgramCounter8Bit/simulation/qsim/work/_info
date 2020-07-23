@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab13/ProgramCounter8Bit/simulation/qsim
+vProgramCounter8Bit
+Z1 !s110 1588100875
+!i10b 1
+!s100 kWXV^edQ;AK7M;5<6dSeV3
+I>Ag82W5iKWaX9CZHfkkQc1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1588100854
+8ProgramCounter8Bit.vo
+FProgramCounter8Bit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1588100873.000000
+!s107 ProgramCounter8Bit.vo|
+!s90 -work|work|ProgramCounter8Bit.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@program@counter8@bit
+vProgramCounter8Bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 >fbF4J[[185PbeaFD`KT]1
+IOYNlo]E`cLz0kGmV1nbU92
+R2
+R0
+w1588100846
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1588100875.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@program@counter8@bit_vlg_vec_tst

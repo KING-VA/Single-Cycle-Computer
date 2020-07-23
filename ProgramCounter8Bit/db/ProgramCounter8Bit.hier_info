@@ -1,0 +1,173 @@
+|ProgramCounter8Bit
+PCout[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+PCout[1] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+PCout[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+PCout[3] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+PCout[4] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+PCout[5] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+PCout[6] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+PCout[7] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+ResetN => inst.ACLR
+ResetN => inst9.ACLR
+ResetN => inst13.ACLR
+ResetN => inst18.ACLR
+ResetN => inst23.ACLR
+ResetN => inst28.ACLR
+ResetN => inst33.ACLR
+ResetN => inst38.ACLR
+Clock => inst.CLK
+Clock => inst9.CLK
+Clock => inst13.CLK
+Clock => inst18.CLK
+Clock => inst23.CLK
+Clock => inst28.CLK
+Clock => inst33.CLK
+Clock => inst38.CLK
+K[0] => Mux4to1:inst7.S0
+K[0] => inst4.IN0
+K[0] => Mux4to1:inst11.S0
+K[0] => Mux4to1:inst16.S0
+K[0] => Mux4to1:inst21.S0
+K[0] => Mux4to1:inst26.S0
+K[0] => Mux4to1:inst31.S0
+K[0] => Mux4to1:inst36.S0
+K[0] => Mux4to1:inst41.S0
+K[1] => Mux4to1:inst7.S1
+K[1] => inst4.IN1
+K[1] => Mux4to1:inst11.S1
+K[1] => Mux4to1:inst16.S1
+K[1] => Mux4to1:inst21.S1
+K[1] => Mux4to1:inst26.S1
+K[1] => Mux4to1:inst31.S1
+K[1] => Mux4to1:inst36.S1
+K[1] => Mux4to1:inst41.S1
+JMPdata[0] => Mux4to1:inst7.In1
+JMPdata[1] => Mux4to1:inst11.In1
+JMPdata[2] => Mux4to1:inst16.In1
+JMPdata[3] => Mux4to1:inst21.In1
+JMPdata[4] => Mux4to1:inst26.In1
+JMPdata[5] => Mux4to1:inst31.In1
+JMPdata[6] => Mux4to1:inst36.In1
+JMPdata[7] => Mux4to1:inst41.In1
+BRNdata[0] => Mux4to1:inst7.In2
+BRNdata[1] => Mux4to1:inst11.In2
+BRNdata[2] => Mux4to1:inst16.In2
+BRNdata[3] => Mux4to1:inst21.In2
+BRNdata[4] => Mux4to1:inst26.In2
+BRNdata[5] => Mux4to1:inst31.In2
+BRNdata[6] => Mux4to1:inst36.In2
+BRNdata[7] => Mux4to1:inst41.In2
+
+
+|ProgramCounter8Bit|Mux4to1:inst7
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst11
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst16
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst21
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst26
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst31
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst36
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|ProgramCounter8Bit|Mux4to1:inst41
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+

@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab10/Mux2to1/Mux2to1.bdf
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab10/Mux2to1/db/Mux2to1.cbx.xml
+design_name = Mux2to1
+instance = comp, \Out~output , Out~output, Mux2to1, 1
+instance = comp, \In1~input , In1~input, Mux2to1, 1
+instance = comp, \S~input , S~input, Mux2to1, 1
+instance = comp, \In0~input , In0~input, Mux2to1, 1
+instance = comp, \inst3~0 , inst3~0, Mux2to1, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Mux2to1, 1

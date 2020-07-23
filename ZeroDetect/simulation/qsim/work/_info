@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab11/ZeroDetect/simulation/qsim
+vZeroDetect
+!s110 1587163262
+!i10b 1
+!s100 Q61mBZ9Skn_i`_6?fB7E31
+IS3Hd[@m?FK8ADVlZz;?g81
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587163246
+8ZeroDetect.vo
+FZeroDetect.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1587163262.000000
+!s107 ZeroDetect.vo|
+!s90 -work|work|ZeroDetect.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@zero@detect
+vZeroDetect_vlg_vec_tst
+!s110 1587163263
+!i10b 1
+!s100 zJ9<VX1R2_^_WZ0cd<kaK2
+I@JZN61S4Togn3b[HD3dAY2
+R1
+R0
+w1587163243
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@zero@detect_vlg_vec_tst

@@ -1,0 +1,307 @@
+$comment
+	File created using the following command:
+		vcd file ProgramCounter8Bit.msim.vcd -direction
+$end
+$date
+	Tue Apr 28 12:08:04 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ProgramCounter8Bit_vlg_vec_tst $end
+$var reg 8 ! BRNdata [7:0] $end
+$var reg 1 " Clock $end
+$var reg 8 # JMPdata [7:0] $end
+$var reg 2 $ K [1:0] $end
+$var reg 1 % ResetN $end
+$var wire 1 & PCout [7] $end
+$var wire 1 ' PCout [6] $end
+$var wire 1 ( PCout [5] $end
+$var wire 1 ) PCout [4] $end
+$var wire 1 * PCout [3] $end
+$var wire 1 + PCout [2] $end
+$var wire 1 , PCout [1] $end
+$var wire 1 - PCout [0] $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 5 Clock~input_o $end
+$var wire 1 6 Clock~inputCLKENA0_outclk $end
+$var wire 1 7 K[1]~input_o $end
+$var wire 1 8 K[0]~input_o $end
+$var wire 1 9 inst36|inst~0_combout $end
+$var wire 1 : JMPdata[7]~input_o $end
+$var wire 1 ; BRNdata[7]~input_o $end
+$var wire 1 < inst41|inst~1_combout $end
+$var wire 1 = BRNdata[6]~input_o $end
+$var wire 1 > JMPdata[6]~input_o $end
+$var wire 1 ? inst36|inst~1_combout $end
+$var wire 1 @ JMPdata[5]~input_o $end
+$var wire 1 A JMPdata[4]~input_o $end
+$var wire 1 B BRNdata[4]~input_o $end
+$var wire 1 C JMPdata[2]~input_o $end
+$var wire 1 D JMPdata[1]~input_o $end
+$var wire 1 E BRNdata[1]~input_o $end
+$var wire 1 F JMPdata[0]~input_o $end
+$var wire 1 G BRNdata[0]~input_o $end
+$var wire 1 H inst7|inst~0_combout $end
+$var wire 1 I ResetN~input_o $end
+$var wire 1 J inst~q $end
+$var wire 1 K inst11|inst~0_combout $end
+$var wire 1 L inst9~q $end
+$var wire 1 M BRNdata[2]~input_o $end
+$var wire 1 N inst16|inst~0_combout $end
+$var wire 1 O inst13~q $end
+$var wire 1 P BRNdata[3]~input_o $end
+$var wire 1 Q JMPdata[3]~input_o $end
+$var wire 1 R inst15~combout $end
+$var wire 1 S inst21|inst~0_combout $end
+$var wire 1 T inst18~q $end
+$var wire 1 U inst20~combout $end
+$var wire 1 V inst26|inst~0_combout $end
+$var wire 1 W inst23~q $end
+$var wire 1 X BRNdata[5]~input_o $end
+$var wire 1 Y inst31|inst~0_combout $end
+$var wire 1 Z inst28~q $end
+$var wire 1 [ inst36|inst~2_combout $end
+$var wire 1 \ inst33~q $end
+$var wire 1 ] inst41|inst~2_combout $end
+$var wire 1 ^ inst41|inst~0_combout $end
+$var wire 1 _ inst38~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11110000 !
+0"
+b1111 #
+b0 $
+1%
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0.
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+08
+19
+0:
+1;
+0<
+1=
+0>
+0?
+0@
+0A
+1B
+1C
+1D
+0E
+1F
+0G
+1H
+1I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+1Q
+0R
+0S
+0T
+0U
+0V
+0W
+1X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+$end
+#50000
+1"
+15
+16
+1J
+1-
+1K
+0H
+#100000
+0"
+05
+06
+#150000
+1"
+15
+16
+1L
+0J
+0-
+1,
+1H
+#200000
+b1 $
+0"
+18
+05
+06
+09
+1S
+1N
+#250000
+1"
+15
+16
+1T
+1O
+1J
+1-
+1+
+1*
+1U
+1R
+#300000
+0"
+05
+06
+#350000
+1"
+15
+16
+#400000
+b11 $
+b10 $
+0"
+08
+17
+05
+06
+1?
+1<
+1Y
+1V
+0S
+0N
+0K
+0H
+1^
+1[
+#450000
+1"
+15
+16
+1_
+1\
+1Z
+1W
+0T
+0O
+0L
+0J
+0-
+0,
+0+
+0*
+1)
+1(
+1'
+1&
+0U
+0R
+#500000
+0"
+05
+06
+#550000
+1"
+15
+16
+#600000
+b0 $
+0"
+07
+05
+06
+0?
+0<
+19
+1H
+#650000
+1"
+15
+16
+1J
+1-
+1K
+0H
+#700000
+0"
+05
+06
+#750000
+1"
+15
+16
+1L
+0J
+0-
+1,
+1H
+#800000
+0"
+05
+06
+#850000
+1"
+15
+16
+1J
+1-
+1N
+0K
+0H
+#900000
+0"
+05
+06
+#950000
+1"
+15
+16
+1O
+0L
+0J
+0-
+0,
+1+
+1H
+#1000000

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Logic Design/Lab4/SevenSeg/simulation/qsim
+vhard_block
+Z1 !s110 1581389808
+!i10b 1
+!s100 65Il4o=Ul37zf<9l81Vg@1
+I:zRi7SVC6m9M`2kO;`RQ53
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1581389808
+Z4 8SevenSeg.vo
+Z5 FSevenSeg.vo
+L0 357
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1581389808.000000
+Z8 !s107 SevenSeg.vo|
+Z9 !s90 -work|work|SevenSeg.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vSevenSeg
+R1
+!i10b 1
+!s100 iUOTnzIjjJLaQUnQ6RBX00
+I6]?zcB:430K^ZLPRR>]RR2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@seven@seg
+vSevenSeg_vlg_vec_tst
+R1
+!i10b 1
+!s100 CZ`[mChPmZFc0RPA]3m]c3
+ICQok]B_GDYzm`c5>[P4cQ3
+R2
+R0
+w1581389806
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@seven@seg_vlg_vec_tst

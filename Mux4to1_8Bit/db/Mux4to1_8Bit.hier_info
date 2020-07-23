@@ -1,0 +1,157 @@
+|Mux4to1_8Bit
+In0[0] => In0[0].IN1
+In0[1] => In0[1].IN1
+In0[2] => In0[2].IN1
+In0[3] => In0[3].IN1
+In0[4] => In0[4].IN1
+In0[5] => In0[5].IN1
+In0[6] => In0[6].IN1
+In0[7] => In0[7].IN1
+In1[0] => In1[0].IN1
+In1[1] => In1[1].IN1
+In1[2] => In1[2].IN1
+In1[3] => In1[3].IN1
+In1[4] => In1[4].IN1
+In1[5] => In1[5].IN1
+In1[6] => In1[6].IN1
+In1[7] => In1[7].IN1
+In2[0] => In2[0].IN1
+In2[1] => In2[1].IN1
+In2[2] => In2[2].IN1
+In2[3] => In2[3].IN1
+In2[4] => In2[4].IN1
+In2[5] => In2[5].IN1
+In2[6] => In2[6].IN1
+In2[7] => In2[7].IN1
+In3[0] => In3[0].IN1
+In3[1] => In3[1].IN1
+In3[2] => In3[2].IN1
+In3[3] => In3[3].IN1
+In3[4] => In3[4].IN1
+In3[5] => In3[5].IN1
+In3[6] => In3[6].IN1
+In3[7] => In3[7].IN1
+S[0] => S[0].IN8
+S[1] => S[1].IN8
+Out[0] << Mux4to1:comb_10.Out
+Out[1] << Mux4to1:comb_9.Out
+Out[2] << Mux4to1:comb_8.Out
+Out[3] << Mux4to1:comb_7.Out
+Out[4] << Mux4to1:comb_6.Out
+Out[5] << Mux4to1:comb_5.Out
+Out[6] << Mux4to1:comb_4.Out
+Out[7] << Mux4to1:comb_3.Out
+
+
+|Mux4to1_8Bit|Mux4to1:comb_3
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_4
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_5
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_6
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_7
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_8
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_9
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+
+|Mux4to1_8Bit|Mux4to1:comb_10
+Out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S1 => inst7.IN0
+S1 => inst9.IN0
+S1 => inst10.IN0
+S0 => inst6.IN0
+S0 => inst10.IN1
+S0 => inst8.IN1
+In0 => inst20.IN2
+In2 => inst9.IN2
+In3 => inst10.IN2
+In1 => inst8.IN2
+
+

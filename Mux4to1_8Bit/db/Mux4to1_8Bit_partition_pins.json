@@ -1,0 +1,177 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "In0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "In2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "In1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "In3[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

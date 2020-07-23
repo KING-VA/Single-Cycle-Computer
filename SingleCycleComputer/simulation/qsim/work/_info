@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab14/SingleCycleComputer/simulation/qsim
+vSingleCycleComputer
+Z1 !s110 1588830082
+!i10b 1
+!s100 Se3dFh@e12<[EcXA1nb2I3
+I>olW[AC9Y5L1XSXT4hRjo3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1588830080
+8SingleCycleComputer.vo
+FSingleCycleComputer.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1588830081.000000
+!s107 SingleCycleComputer.vo|
+!s90 -work|work|SingleCycleComputer.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@single@cycle@computer
+vSingleCycleComputer_vlg_vec_tst
+R1
+!i10b 1
+!s100 SgDKKH9X0k9h05XjBYVXZ3
+Igab@L0SMHbG6;AhYFXBU91
+R2
+R0
+w1588830076
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1588830082.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@single@cycle@computer_vlg_vec_tst

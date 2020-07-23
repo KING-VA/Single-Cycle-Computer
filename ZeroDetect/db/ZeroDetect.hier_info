@@ -1,0 +1,12 @@
+|ZeroDetect
+G[0] => Z.IN1
+G[1] => Z.IN1
+G[2] => Z.IN1
+G[3] => Z.IN1
+G[4] => Z.IN1
+G[5] => Z.IN1
+G[6] => Z.IN0
+G[7] => Z.IN1
+Z << Z.DB_MAX_OUTPUT_PORT_TYPE
+
+

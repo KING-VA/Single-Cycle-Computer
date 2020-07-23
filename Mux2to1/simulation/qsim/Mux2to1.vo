@@ -1,0 +1,162 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "04/01/2020 11:37:52"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Mux2to1 (
+	Out,
+	S,
+	In1,
+	In0);
+output 	Out;
+input 	S;
+input 	In1;
+input 	In0;
+
+// Design Ports Information
+// Out	=>  Location: PIN_T7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S	=>  Location: PIN_T8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// In1	=>  Location: PIN_V6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// In0	=>  Location: PIN_U6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \In1~input_o ;
+wire \S~input_o ;
+wire \In0~input_o ;
+wire \inst3~0_combout ;
+
+
+// Location: IOOBUF_X6_Y0_N19
+cyclonev_io_obuf \Out~output (
+	.i(\inst3~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Out),
+	.obar());
+// synopsys translate_off
+defparam \Out~output .bus_hold = "false";
+defparam \Out~output .open_drain_output = "false";
+defparam \Out~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X6_Y0_N35
+cyclonev_io_ibuf \In1~input (
+	.i(In1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\In1~input_o ));
+// synopsys translate_off
+defparam \In1~input .bus_hold = "false";
+defparam \In1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X6_Y0_N1
+cyclonev_io_ibuf \S~input (
+	.i(S),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\S~input_o ));
+// synopsys translate_off
+defparam \S~input .bus_hold = "false";
+defparam \S~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X6_Y0_N52
+cyclonev_io_ibuf \In0~input (
+	.i(In0),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\In0~input_o ));
+// synopsys translate_off
+defparam \In0~input .bus_hold = "false";
+defparam \In0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: MLABCELL_X6_Y1_N0
+cyclonev_lcell_comb \inst3~0 (
+// Equation(s):
+// \inst3~0_combout  = ( \In0~input_o  & ( (!\S~input_o ) # (\In1~input_o ) ) ) # ( !\In0~input_o  & ( (\In1~input_o  & \S~input_o ) ) )
+
+	.dataa(!\In1~input_o ),
+	.datab(gnd),
+	.datac(!\S~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\In0~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst3~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst3~0 .extended_lut = "off";
+defparam \inst3~0 .lut_mask = 64'h05050505F5F5F5F5;
+defparam \inst3~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X80_Y37_N0
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

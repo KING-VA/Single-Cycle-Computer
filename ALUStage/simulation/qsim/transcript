@@ -1,0 +1,31 @@
+# do ALUStage.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:06 on Apr 17,2020
+# vlog -work work ALUStage.vo 
+# -- Compiling module ALUStage
+# 
+# Top level modules:
+# 	ALUStage
+# End time: 13:47:07 on Apr 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:07 on Apr 17,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ALUStage_vlg_vec_tst
+# 
+# Top level modules:
+# 	ALUStage_vlg_vec_tst
+# End time: 13:47:07 on Apr 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ALUStage_vlg_vec_tst 
+# Start time: 13:47:08 on Apr 17,2020
+# Loading work.ALUStage_vlg_vec_tst
+# Loading work.ALUStage
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# after#23
+# ** Note: $finish    : Waveform.vwf.vt(58)
+#    Time: 1200 ns  Iteration: 0  Instance: /ALUStage_vlg_vec_tst
+# End time: 13:47:10 on Apr 17,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

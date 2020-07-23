@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab10/ArithStage/simulation/qsim
+vArithStage
+Z1 !s110 1585777125
+!i10b 1
+!s100 4GelXB15Vg24S<ae1<9C12
+IhFmbBdk_]2b]WbFZ;U[L13
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585777120
+8ArithStage.vo
+FArithStage.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1585777125.000000
+!s107 ArithStage.vo|
+!s90 -work|work|ArithStage.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@arith@stage
+vArithStage_vlg_vec_tst
+R1
+!i10b 1
+!s100 :VE_m;bkKDo3O4F3SzPIk0
+IcZRZ^7m7ToEeeXRTkL?^D1
+R2
+R0
+w1585777116
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@arith@stage_vlg_vec_tst

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab10/Mux2to1/simulation/qsim
+vMux2to1
+Z1 !s110 1585766281
+!i10b 1
+!s100 P32e;20OS5QGSNW9AFYOg3
+ICMX8WEFYDWkfIEmi[];:M0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585766272
+8Mux2to1.vo
+FMux2to1.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1585766280.000000
+!s107 Mux2to1.vo|
+!s90 -work|work|Mux2to1.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@mux2to1
+vMux2to1_vlg_vec_tst
+R1
+!i10b 1
+!s100 0^:FhGeQ4R3ESV5L@hWZ;1
+IV^>6;GjU35OAB;EM2XQoW2
+R2
+R0
+w1585766269
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1585766281.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@mux2to1_vlg_vec_tst

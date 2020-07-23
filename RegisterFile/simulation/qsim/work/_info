@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab12/RegisterFile/simulation/qsim
+vRegisterFile
+Z1 !s110 1587854238
+!i10b 1
+!s100 A_YmUOg2;z^lz7JLP`PbZ3
+I5Y2DoIclU[_>oZ;W3eYh:3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587854236
+8RegisterFile.vo
+FRegisterFile.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1587854238.000000
+!s107 RegisterFile.vo|
+!s90 -work|work|RegisterFile.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@register@file
+vRegisterFile_vlg_vec_tst
+R1
+!i10b 1
+!s100 NKQ?49h?kW8Q=hb@FJ^d@3
+I=Rc33KdGB6ZHoH44U3TCz3
+R2
+R0
+w1587854233
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@register@file_vlg_vec_tst

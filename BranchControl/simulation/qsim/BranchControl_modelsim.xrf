@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab13/BranchControl/BranchControl.v
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab13/BranchControl/Waveform.vwf
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab13/BranchControl/db/BranchControl.cbx.xml
+design_name = BranchControl
+instance = comp, \K[0]~output , K[0]~output, BranchControl, 1
+instance = comp, \K[1]~output , K[1]~output, BranchControl, 1
+instance = comp, \JB~input , JB~input, BranchControl, 1
+instance = comp, \PL~input , PL~input, BranchControl, 1
+instance = comp, \K~0 , K~0, BranchControl, 1
+instance = comp, \N~input , N~input, BranchControl, 1
+instance = comp, \BC~input , BC~input, BranchControl, 1
+instance = comp, \Z~input , Z~input, BranchControl, 1
+instance = comp, \K~1 , K~1, BranchControl, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, BranchControl, 1

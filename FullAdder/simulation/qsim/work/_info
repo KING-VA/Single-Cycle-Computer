@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Logic Design/Lab4/FullAdder/simulation/qsim
+vFullAdder
+Z1 !s110 1581390917
+!i10b 1
+!s100 I<6HBj5P;iYh4^`[RcCO03
+I>Wh<:OR23]:eCA^A2Hl:T1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1581390916
+Z4 8FullAdder.vo
+Z5 FFullAdder.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1581390916.000000
+Z8 !s107 FullAdder.vo|
+Z9 !s90 -work|work|FullAdder.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@full@adder
+vFullAdder_vlg_vec_tst
+!s110 1581390918
+!i10b 1
+!s100 eIlk;QXoA7;2bF^oEaj151
+IGR:5[a:BUJ=W@]RJSn7bE0
+R2
+R0
+R3
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1581390917.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@full@adder_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 DoW7G9Z`a6S7fXGjDz;aU2
+IinKg4jT`GP4gdYB8]70d02
+R2
+R0
+R3
+R4
+R5
+L0 176
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

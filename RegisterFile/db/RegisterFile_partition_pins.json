@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Adata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Adata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Bdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Aaddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Aaddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Baddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Baddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "ResetN",
+					"strict" : false
+				},
+				{
+					"name" : "Daddr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Write",
+					"strict" : false
+				},
+				{
+					"name" : "Daddr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ddata[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

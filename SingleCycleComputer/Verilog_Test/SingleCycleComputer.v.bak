@@ -1,0 +1,6 @@
+module SingleCycleComputer(BusA, BusB, BusD, 
+PCout, Clock, DataIn, IR, K, MW, ResetN, 
+BusDhighnibble, BusDlownibble, 
+BusBhighnibble, BusBlownibble, 
+BusAhighnibble, BusAlownibble, 
+PCouthighnibble, PCoutlownibble);

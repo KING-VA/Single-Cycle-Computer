@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab12/Mux4to1_8Bit/simulation/qsim
+vMux4to1_8Bit
+Z1 !s110 1587841766
+!i10b 1
+!s100 AB7Tn]1U4BMfQ<C647XUY1
+I:H=c[a30]Efn>oL^3RN<n3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587841755
+8Mux4to1_8Bit.vo
+FMux4to1_8Bit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1587841766.000000
+!s107 Mux4to1_8Bit.vo|
+!s90 -work|work|Mux4to1_8Bit.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@mux4to1_8@bit
+vMux4to1_8Bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 PfXTQmT^Q=1A[6YcoOV@?2
+IFE0>eCU>O`Z`ijXcU`Uf[2
+R2
+R0
+w1587841751
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@mux4to1_8@bit_vlg_vec_tst

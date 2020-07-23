@@ -1,0 +1,99 @@
+|Mux2to1_8bit
+Out[0] <= Mux2to1:inst8.Out
+Out[1] <= Mux2to1:inst7.Out
+Out[2] <= Mux2to1:inst6.Out
+Out[3] <= Mux2to1:inst5.Out
+Out[4] <= Mux2to1:inst3.Out
+Out[5] <= Mux2to1:inst2.Out
+Out[6] <= Mux2to1:inst1.Out
+Out[7] <= Mux2to1:inst.Out
+S => Mux2to1:inst.S
+S => Mux2to1:inst1.S
+S => Mux2to1:inst2.S
+S => Mux2to1:inst3.S
+S => Mux2to1:inst5.S
+S => Mux2to1:inst6.S
+S => Mux2to1:inst7.S
+S => Mux2to1:inst8.S
+In0[0] => Mux2to1:inst8.In0
+In0[1] => Mux2to1:inst7.In0
+In0[2] => Mux2to1:inst6.In0
+In0[3] => Mux2to1:inst5.In0
+In0[4] => Mux2to1:inst3.In0
+In0[5] => Mux2to1:inst2.In0
+In0[6] => Mux2to1:inst1.In0
+In0[7] => Mux2to1:inst.In0
+In1[0] => Mux2to1:inst8.In1
+In1[1] => Mux2to1:inst7.In1
+In1[2] => Mux2to1:inst6.In1
+In1[3] => Mux2to1:inst5.In1
+In1[4] => Mux2to1:inst3.In1
+In1[5] => Mux2to1:inst2.In1
+In1[6] => Mux2to1:inst1.In1
+In1[7] => Mux2to1:inst.In1
+
+
+|Mux2to1_8bit|Mux2to1:inst
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst1
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst2
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst3
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst5
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst6
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst7
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+
+|Mux2to1_8bit|Mux2to1:inst8
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst2.IN0
+In1 => inst1.IN1
+In0 => inst.IN0
+
+

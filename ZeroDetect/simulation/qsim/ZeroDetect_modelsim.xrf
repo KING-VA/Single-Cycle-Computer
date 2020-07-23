@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab11/ZeroDetect/ZeroDetect.v
+source_file = 1, C:/Users/2808V/Documents/ENGR303/Labs/Lab11/ZeroDetect/db/ZeroDetect.cbx.xml
+design_name = ZeroDetect
+instance = comp, \Z~output , Z~output, ZeroDetect, 1
+instance = comp, \G[5]~input , G[5]~input, ZeroDetect, 1
+instance = comp, \G[4]~input , G[4]~input, ZeroDetect, 1
+instance = comp, \G[6]~input , G[6]~input, ZeroDetect, 1
+instance = comp, \G[2]~input , G[2]~input, ZeroDetect, 1
+instance = comp, \G[0]~input , G[0]~input, ZeroDetect, 1
+instance = comp, \G[3]~input , G[3]~input, ZeroDetect, 1
+instance = comp, \G[1]~input , G[1]~input, ZeroDetect, 1
+instance = comp, \Z~0 , Z~0, ZeroDetect, 1
+instance = comp, \G[7]~input , G[7]~input, ZeroDetect, 1
+instance = comp, \Z~1 , Z~1, ZeroDetect, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, ZeroDetect, 1

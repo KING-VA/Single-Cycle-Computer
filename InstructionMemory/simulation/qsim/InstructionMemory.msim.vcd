@@ -1,0 +1,177 @@
+$comment
+	File created using the following command:
+		vcd file InstructionMemory.msim.vcd -direction
+$end
+$date
+	Wed May 06 22:19:30 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module InstructionMemory_vlg_vec_tst $end
+$var reg 8 ! Address [7:0] $end
+$var wire 1 " IR [15] $end
+$var wire 1 # IR [14] $end
+$var wire 1 $ IR [13] $end
+$var wire 1 % IR [12] $end
+$var wire 1 & IR [11] $end
+$var wire 1 ' IR [10] $end
+$var wire 1 ( IR [9] $end
+$var wire 1 ) IR [8] $end
+$var wire 1 * IR [7] $end
+$var wire 1 + IR [6] $end
+$var wire 1 , IR [5] $end
+$var wire 1 - IR [4] $end
+$var wire 1 . IR [3] $end
+$var wire 1 / IR [2] $end
+$var wire 1 0 IR [1] $end
+$var wire 1 1 IR [0] $end
+
+$scope module i1 $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 unknown $end
+$var tri1 1 5 devclrn $end
+$var tri1 1 6 devpor $end
+$var tri1 1 7 devoe $end
+$var wire 1 8 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 9 Address[3]~input_o $end
+$var wire 1 : Address[1]~input_o $end
+$var wire 1 ; Address[7]~input_o $end
+$var wire 1 < Address[4]~input_o $end
+$var wire 1 = Address[6]~input_o $end
+$var wire 1 > Address[5]~input_o $end
+$var wire 1 ? IR~0_combout $end
+$var wire 1 @ Address[2]~input_o $end
+$var wire 1 A Address[0]~input_o $end
+$var wire 1 B WideOr11~0_combout $end
+$var wire 1 C IR~1_combout $end
+$var wire 1 D WideOr9~0_combout $end
+$var wire 1 E WideOr9~1_combout $end
+$var wire 1 F WideOr8~0_combout $end
+$var wire 1 G WideOr8~1_combout $end
+$var wire 1 H WideOr7~0_combout $end
+$var wire 1 I WideOr7~1_combout $end
+$var wire 1 J WideOr6~0_combout $end
+$var wire 1 K WideOr6~1_combout $end
+$var wire 1 L WideOr5~0_combout $end
+$var wire 1 M WideOr5~1_combout $end
+$var wire 1 N WideOr4~0_combout $end
+$var wire 1 O WideOr4~1_combout $end
+$var wire 1 P IR~2_combout $end
+$var wire 1 Q IR~3_combout $end
+$var wire 1 R WideOr3~0_combout $end
+$var wire 1 S WideOr3~1_combout $end
+$var wire 1 T IR~4_combout $end
+$var wire 1 U WideOr2~0_combout $end
+$var wire 1 V WideOr2~1_combout $end
+$var wire 1 W WideOr1~0_combout $end
+$var wire 1 X WideOr1~1_combout $end
+$var wire 1 Y WideOr0~0_combout $end
+$var wire 1 Z WideOr0~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+1$
+0#
+0"
+02
+13
+x4
+15
+16
+17
+08
+09
+0:
+0;
+0<
+0=
+0>
+1?
+0@
+0A
+1B
+1C
+0D
+1E
+0F
+1G
+1H
+1I
+0J
+1K
+1L
+1M
+1N
+1O
+0P
+0Q
+0R
+0S
+0T
+1U
+1V
+0W
+0X
+0Y
+0Z
+$end
+#100000
+b1 !
+1A
+0L
+0M
+1+
+#200000
+b11 !
+b10 !
+0A
+1:
+1Y
+0U
+1R
+0N
+1L
+1T
+1%
+1M
+0O
+1S
+0V
+1Z
+1"
+0$
+1&
+1*
+0+
+#300000
+b11 !
+1A
+0L
+1D
+0E
+0M
+1+
+1/
+#400000

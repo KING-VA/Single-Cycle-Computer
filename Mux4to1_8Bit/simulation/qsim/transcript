@@ -1,0 +1,31 @@
+# do Mux4to1_8Bit.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:26 on Apr 25,2020
+# vlog -work work Mux4to1_8Bit.vo 
+# -- Compiling module Mux4to1_8Bit
+# 
+# Top level modules:
+# 	Mux4to1_8Bit
+# End time: 12:09:26 on Apr 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:09:26 on Apr 25,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Mux4to1_8Bit_vlg_vec_tst
+# 
+# Top level modules:
+# 	Mux4to1_8Bit_vlg_vec_tst
+# End time: 12:09:26 on Apr 25,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.Mux4to1_8Bit_vlg_vec_tst 
+# Start time: 12:09:29 on Apr 25,2020
+# Loading work.Mux4to1_8Bit_vlg_vec_tst
+# Loading work.Mux4to1_8Bit
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# after#23
+# ** Note: $finish    : Waveform.vwf.vt(52)
+#    Time: 500 ns  Iteration: 0  Instance: /Mux4to1_8Bit_vlg_vec_tst
+# End time: 12:09:31 on Apr 25,2020, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

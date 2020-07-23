@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab12/GenReg8Bit/simulation/qsim
+vGenReg8Bit
+Z1 !s110 1587849784
+!i10b 1
+!s100 [=efZ[MVKZP<;bS_GQdWU2
+IN=bP3LAiR20>eYl[_;a8S3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587849774
+8GenReg8Bit.vo
+FGenReg8Bit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1587849784.000000
+!s107 GenReg8Bit.vo|
+!s90 -work|work|GenReg8Bit.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@gen@reg8@bit
+vGenReg8Bit_vlg_vec_tst
+R1
+!i10b 1
+!s100 @UEASW=:G::QnGR^RJjNz3
+I37KJ1M=RY_:8UZAZbijJz2
+R2
+R0
+w1587849771
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@gen@reg8@bit_vlg_vec_tst

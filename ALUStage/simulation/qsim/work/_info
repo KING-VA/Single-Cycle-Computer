@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/2808V/Documents/ENGR303/Labs/Lab11/ALUStage/simulation/qsim
+vALUStage
+!s110 1587156426
+!i10b 1
+!s100 R[df<WlzMRF=nQdAQ=BOK2
+I@PoAIGgj^64hVC8E>>JC@3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1587156422
+8ALUStage.vo
+FALUStage.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1587156426.000000
+!s107 ALUStage.vo|
+!s90 -work|work|ALUStage.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@a@l@u@stage
+vALUStage_vlg_vec_tst
+!s110 1587156427
+!i10b 1
+!s100 Y8VmEWiMNg3eEI[1cY<8a3
+IEn?cz[6aP1lM9Xd3ML6Am0
+R1
+R0
+w1587156419
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1587156427.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4
+n@a@l@u@stage_vlg_vec_tst

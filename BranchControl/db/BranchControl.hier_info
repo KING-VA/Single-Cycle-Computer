@@ -1,0 +1,13 @@
+|BranchControl
+PL => K.IN0
+PL => K.IN0
+JB => K.IN1
+JB => K.IN1
+BC => K.IN1
+BC => K.IN1
+Z => K.IN1
+N => K.IN1
+K[0] <= K.DB_MAX_OUTPUT_PORT_TYPE
+K[1] <= K.DB_MAX_OUTPUT_PORT_TYPE
+
+

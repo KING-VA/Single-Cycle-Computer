@@ -1,0 +1,31 @@
+# do ZeroDetect.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:02 on Apr 17,2020
+# vlog -work work ZeroDetect.vo 
+# -- Compiling module ZeroDetect
+# 
+# Top level modules:
+# 	ZeroDetect
+# End time: 15:41:02 on Apr 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:41:02 on Apr 17,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ZeroDetect_vlg_vec_tst
+# 
+# Top level modules:
+# 	ZeroDetect_vlg_vec_tst
+# End time: 15:41:03 on Apr 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ZeroDetect_vlg_vec_tst 
+# Start time: 15:41:10 on Apr 17,2020
+# Loading work.ZeroDetect_vlg_vec_tst
+# Loading work.ZeroDetect
+# Loading cyclonev_ver.cyclonev_io_obuf
+# Loading cyclonev_ver.cyclonev_io_ibuf
+# Loading cyclonev_ver.cyclonev_lcell_comb
+# after#23
+# ** Note: $finish    : Waveform.vwf.vt(44)
+#    Time: 2 us  Iteration: 0  Instance: /ZeroDetect_vlg_vec_tst
+# End time: 15:41:13 on Apr 17,2020, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
